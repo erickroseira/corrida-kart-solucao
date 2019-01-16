@@ -12,4 +12,4 @@ Informações esperadas
 
 
 
-Qualquer dúvida não exite em entrar em contato.
+Qualquer dúvida não hesite em entrar em contato.
