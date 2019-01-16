@@ -1,0 +1,6 @@
+Para que a solução funcione corretamente é necessário assegurar que os seguintes tópicos serão atendidos:
+
+-> 1. A solução foi desenvolvida em Java. Neste caso é mandatório versão Java 8, pois a solução utiliza recursos que somente estão 
+      disponíveis a partir do Java 8. Nesta solução foram utilizadas as API Streams e funções Lambda, recursos desta versão do Java.
+      
+-> 2. 
