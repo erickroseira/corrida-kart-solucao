@@ -36,6 +36,7 @@ Para que a solução funcione corretamente é necessário assegurar que os segui
             respectivamente o caminho onde se encontra o arquivo de log da corrida e o caminho onde será salvo o relatório final da
             corrida.
        
-      3.3 -> Após "rodar" este comando a solução irá realizar os cálculos necessários e gerar o relatorio
+      3.3 -> Após "rodar" este comando a solução irá realizar os cálculos necessários e gerar o relatorio. Uma prévia do resultado
+            também será gerado no terminal/promp de comando ou console utilizado.
             
       
