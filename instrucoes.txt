@@ -20,5 +20,22 @@ Para que a solução funcione corretamente é necessário assegurar que os segui
       
       ENTÃO ASSEGURE DE ESTAR SEGUNIDO ESTE PADRÃO NO ARQUIVO DE LOG
      
- -> 3. 
+ -> 3. O projeto java foi criado no IntellJ IDEA. Para rodar o projeto abra-o no IntellJ e o execute. Caso não possua siga estes passos.
+      
+      * -> O projeto neste repositorio já está pré-compilado, logo basta apenas entrar na pasta correta e executar os seguintes comandos:
+      
+      3.1 -> Após baixar o projeto navegue na linha de comando para a seguinte diretorio:
+      
+            <caminho_onde_salvou_o_projeto>/GympassTest/out/production/GympassTest
+      
+      3.2 -> Para "rodar" o projeto digite o seguinte comando e após isto tecle enter:
+      
+            java corrida.log.reader.Main <caminho_log_corrida_input> <caminho_relatorio_de_saida>
+            
+            OBS: corrida.log.reader.Main é o package da classe principal. <caminho_log_corrida_input> e <caminho_relatorio_de_saida> são
+            respectivamente o caminho onde se encontra o arquivo de log da corrida e o caminho onde será salvo o relatório final da
+            corrida.
+       
+      3.3 -> Após "rodar" este comando a solução irá realizar os cálculos necessários e gerar o relatorio
+            
       
