@@ -3,25 +3,29 @@ Para que a solução funcione corretamente é necessário assegurar que os segui
 -> 1. A solução foi desenvolvida em Java. Neste caso é mandatório versão Java 8, pois a solução utiliza recursos que somente estão 
       disponíveis a partir do Java 8. Nesta solução foram utilizadas as API Streams e funções Lambda, recursos desta versão do Java.
       
--> 2. Baseando-se no formato do log disponibilizado (respositório Gympass) é necessário que as colunas sejam separadas por mais 
-      de um espaço. Ou seja, o código irá definir como colunas termos separados por 2 ou mais espaços. No entanto o conteúdo de cada
-	  coluna deverá ser separado por apenas 1 espaço (não mais que isso). Por exemplo, o log abaixo está no formato correto, pois as 
-	  colunas estão separadas por 2 ou mais espaços e o conteúdo de cada uma delas está separado por apenas 1 espaço (quando aplicável
-	  como no caso da coluna Piloto). Na coluna Piloto, por exemplo, o código, o caractere "-" e o nome do piloto (038 – F.MASSA) 
-	  estão separados por apenas 1 espaço. Já as colunas estão separadas entre si, por mais de um espaço.
+-> 2. Baseando-se no formato do log disponibilizado (respositório Gympass) é necessário que as colunas sejam separadas por dois ou mais 
+      espaços, ou seja, o código irá definir como colunas termos separados por 2 ou mais espaços. No entanto o conteúdo de cada
+      coluna deverá ser separado por apenas 1 espaço (não mais que isso). Por exemplo, o log abaixo está no formato correto, pois as
+      colunas estão separadas por 2 ou mais espaços e o conteúdo de cada uma delas está separado por apenas 1 espaço (quando aplicável,
+      como no caso da coluna Piloto). Na coluna Piloto, por exemplo, o código, o caractere "-" e o nome do piloto (038 – F.MASSA) 
+      estão separados por apenas 1 espaço. Já as colunas estão separadas entre si, por mais de um espaço.
 	  
+      
       Hora                               Piloto             Nº Volta   Tempo Volta       Velocidade média da volta
       23:49:08.277      038 – F.MASSA                           1		1:02.852                        44,275
+      
       
       Por outro lado, o exemplo abaixo não irá gerar resultados, pois o código e o nome do Piloto estão separados por mais 
       de um espaço. Desta forma o programa entenderia que há 7 colunas na linha 2, quando na realidade temos apenas 5. 
       
+      
       Hora                               Piloto             Nº Volta   Tempo Volta       Velocidade média da volta
       23:49:08.277      038    –    F.MASSA                           1		1:02.852                        44,275
       
-	  Quando a solução encontra este tipo de inconsistência ela printa um warning e para a execução.
+      
+      Quando a solução encontra este tipo de inconsistência ela printa um warning e para a execução.
 	  
-      PORTANTO, ASSEGURE DE ESTAR SEGUINDO O PADRÃO CORRETO DO ARQUIVO DE LOG
+      PORTANTO, ASSEGURE DE ESTAR SEGUINDO O PADRÃO CORRETO DO ARQUIVO DE LOG.
      
  -> 3. O projeto java foi criado no IntellJ IDEA. Para rodar a solução siga os passos:
       
@@ -47,5 +51,4 @@ Para que a solução funcione corretamente é necessário assegurar que os segui
       
 
 	  
-OBS: Para melhor visualizar o relatório gerado abra-o com algum editor de código como Notepad++ (preferível) ou SublimeText ou algum de sua preferência
-que possibilite scroll horizontal, pois o relatório de saída é um pouco largo.
+OBS: Para melhor visualizar o relatório gerado abra-o com algum editor de código como Notepad++ (preferível), SublimeText ou algum de sua preferência que possibilite scroll horizontal, pois o relatório de saída é um pouco largo.
