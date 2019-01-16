@@ -34,9 +34,12 @@ Para que a solução funcione corretamente é necessário assegurar que os segui
             
             OBS: corrida.log.reader.Main é o package da classe principal. <caminho_log_corrida_input> e <caminho_relatorio_de_saida> são
             respectivamente o caminho onde se encontra o arquivo de log da corrida e o caminho onde será salvo o relatório final da
-            corrida.
+            corrida (com extensao). Exemplo java corrida.log.reader.Main .../home/input.txt ../saida/relatorio.txt
        
       3.3 -> Após "rodar" este comando a solução irá realizar os cálculos necessários e gerar o relatorio. Uma prévia do resultado
             também será gerado no terminal/promp de comando ou console utilizado.
             
       
+
+	  
+OBS: Para melhor visualizar o relatorio gerado abra-o com algum editor de código como Notepad++ ou SublimeText ou algum de sua preferência.
