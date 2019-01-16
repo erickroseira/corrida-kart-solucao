@@ -3,23 +3,25 @@ Para que a solução funcione corretamente é necessário assegurar que os segui
 -> 1. A solução foi desenvolvida em Java. Neste caso é mandatório versão Java 8, pois a solução utiliza recursos que somente estão 
       disponíveis a partir do Java 8. Nesta solução foram utilizadas as API Streams e funções Lambda, recursos desta versão do Java.
       
--> 2. Baseando-se no formato do log disponibilizado (respositório Gympass) é necessário que os dados das colunas sejam separados por mais 
-      de um espaço. Ou seja, o código irá definir o valor das colunas por dois caracters de espaço ou mais (A definição do valor de cada 
-      coluna se dá pela identificação de 2 caracteres de espaço ou mais). Por exemplo, o log abaixo está no formato correto, pois o valores 
-      de cada coluna estão separados por apenas 1 espaço (no caso de haver separação como na coluna Piloto). Na coluna Piloto por exemplo,  
-      o código, o caractere "-" e o nome do piloto (038 – F.MASSA) estão separados por apenas 1 espaço. Já as colunas estão separadas 
-      entre si, por mais de um espaço.
+-> 2. Baseando-se no formato do log disponibilizado (respositório Gympass) é necessário que as colunas sejam separadas por mais 
+      de um espaço. Ou seja, o código irá definir como colunas termos separados por 2 ou mais espaços. No entanto o conteúdo de cada
+	  coluna deverá ser separado por apenas 1 espaço (não mais que isso). Por exemplo, o log abaixo está no formato correto, pois as 
+	  colunas estão separadas por 2 ou mais espaços e o conteúdo de cada uma delas está separado por apenas 1 espaço (quando aplicável
+	  como no caso da coluna Piloto). Na coluna Piloto, por exemplo, o código, o caractere "-" e o nome do piloto (038 – F.MASSA) 
+	  estão separados por apenas 1 espaço. Já as colunas estão separadas entre si, por mais de um espaço.
 	  
       Hora                               Piloto             Nº Volta   Tempo Volta       Velocidade média da volta
       23:49:08.277      038 – F.MASSA                           1		1:02.852                        44,275
       
-      Por outro lado, o exemplo abaixo irá gerar execução e dados incorretos, pois o código e o nome do Piloto estão separados por mais 
-      de um espaço. Desta forma o programa irá entender que tem 7 colunas na linha 2, quando na realidade temos apenas 5.
+      Por outro lado, o exemplo abaixo não irá gerar resultados, pois o código e o nome do Piloto estão separados por mais 
+      de um espaço. Desta forma o programa entenderia que há 7 colunas na linha 2, quando na realidade temos apenas 5. 
       
       Hora                               Piloto             Nº Volta   Tempo Volta       Velocidade média da volta
       23:49:08.277      038    –    F.MASSA                           1		1:02.852                        44,275
       
-      ENTÃO ASSEGURE DE ESTAR SEGUNIDO ESTE PADRÃO NO ARQUIVO DE LOG
+	  Quando a solução encontra este tipo de inconsistência ela printa um warning e para a execução.
+	  
+      PORTANTO, ASSEGURE DE ESTAR SEGUINDO O PADRÃO CORRETO DO ARQUIVO DE LOG
      
  -> 3. O projeto java foi criado no IntellJ IDEA. Para rodar a solução siga os passos:
       
@@ -35,12 +37,15 @@ Para que a solução funcione corretamente é necessário assegurar que os segui
             
             OBS: corrida.log.reader.Main é o package da classe principal. <caminho_log_corrida_input> e <caminho_relatorio_de_saida> são
             respectivamente o caminho onde se encontra o arquivo de log da corrida e o caminho onde será salvo o relatório final da
-            corrida (com extensao). Exemplo java corrida.log.reader.Main .../home/input.txt ../saida/relatorio.txt
+            corrida (com extensão). 
+			
+			EXEMPLO DE USO: java corrida.log.reader.Main /home/usuario/corrida/input.txt /home/usuario/corrida/relatorio.txt
        
-      3.3 -> Após "rodar" este comando a solução irá realizar os cálculos necessários e gerar o relatório. Uma prévia do resultado
-            também será gerado no terminal/prompt de comando ou console utilizado.
+      3.3 -> Após "rodar" este comando a solução irá realizar os cálculos necessários e gerar o relatório. Uma prévia dos resultados
+            também será gerada no terminal/prompt de comando ou console utilizado.
             
       
 
 	  
-OBS: Para melhor visualizar o relatório gerado abra-o com algum editor de código como Notepad++ ou SublimeText ou algum de sua preferência.
+OBS: Para melhor visualizar o relatório gerado abra-o com algum editor de código como Notepad++ (preferível) ou SublimeText ou algum de sua preferência
+que possibilite scroll horizontal, pois o relatório de saída é um pouco largo.
